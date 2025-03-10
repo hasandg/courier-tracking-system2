@@ -1,6 +1,6 @@
 # Courier Tracking System
 
-## Project Requirements (from the case study)
+## Project Requirements
 
 The main requirements were:
 1. Build a RESTful API that can handle streaming courier location updates
