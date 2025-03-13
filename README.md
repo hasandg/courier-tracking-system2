@@ -361,3 +361,11 @@ Some examples of those can be seen in my following repositories:
 https://github.com/hasandg/Spring_Boot_Cloud_Security  
 https://github.com/hasandg/Bank-Account-Project-with-CQRS-and-Event-Sourcing-Kafka
 
+## Docker Image Building
+
+docker buildx build --no-cache --platform linux/amd64 --push -t hasandag/config-server/postfix:0.0.1-r0 . -t hasandag/config-server/postfix:aarch64 -t hasandag/config-server/postfix:arm64
+
+
+docker buildx build --platform linux/amd64 -t config-server -f Dockerfile .
+docker tag 5ce5c193ff14 hasandag/config-server:100
+docker push hasandag/config-server:100
